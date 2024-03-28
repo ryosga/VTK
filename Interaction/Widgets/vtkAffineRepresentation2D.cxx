@@ -944,6 +944,7 @@ void vtkAffineRepresentation2D::BuildRepresentation()
       this->CircleCellArray->InsertCellPoint(i);
     }
     this->CircleCellArray->InsertCellPoint(0);
+    this->CirclePoints->Modified();
 
     // draw the translation axes
     this->CurrentAxesWidth = this->CurrentWidth * this->AxesWidth / this->BoxWidth;
